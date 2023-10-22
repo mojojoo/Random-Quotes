@@ -1,0 +1,131 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+body {
+  background-color: rgb(246, 228, 255);
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  padding: 2rem;
+  width: 50%;
+  height: 70%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  color: #fff;
+  font-size: 3rem;
+  border-bottom: 3px solid #000;
+  margin-bottom: 1rem;
+}
+
+.wrapper {
+  background: #ffffff2f;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.category {
+  font-size: 2rem;
+}
+
+span {
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.quotes {
+  text-align: center;
+  font-size: 1.9rem;
+}
+
+.author {
+  font-weight: 400;
+  width: 100%;
+}
+
+button {
+  width: 30%;
+  margin-top: 1rem;
+  font-size: 1.7rem;
+  padding: 1rem;
+  border: 0;
+  outline: 0;
+  background-color: #ff6de4;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover,
+button:target {
+  background-color: #cf3fb5;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+@media screen and (max-width: 1080px) {
+  .container {
+    width: 90%;
+    height: 90%;
+  }
+  .wrapper {
+    gap: 1rem;
+  }
+  .quotes {
+    font-size: 1rem;
+  }
+  button {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 514px) {
+  .title {
+    font-size: 1.9rem;
+  }
+  .category {
+    font-size: 1rem;
+  }
+  button {
+    font-size: 1rem;
+  }
+  .author {
+    font-size: 1.2rem;
+  }
+}
